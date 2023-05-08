@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import { useState } from 'react';
 
 import Image from 'next/image';
 import close from '@/public/close.svg';
@@ -25,6 +28,8 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const [active, setActive] = useState('Home');
+
   return (
     <nav className="flex w-full items-center justify-between py-6">
       <Image src={logo} alt="hoobank" className="h-[32px] w-[124px]" />
@@ -33,7 +38,10 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className="mr-10 cursor-pointer font-sans text-[16px] font-normal text-white"
+            className={`cursor-pointer font-sans text-[16px] font-normal ${
+              active === nav.title ? 'text-white' : 'text-dimWhite'
+            } ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}
+            onClick={() => setActive(nav.title)}
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
