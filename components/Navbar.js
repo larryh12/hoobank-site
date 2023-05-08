@@ -29,6 +29,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [active, setActive] = useState('Home');
+  const [toggle, setToggle] = useState(false);
 
   return (
     <nav className="flex w-full items-center justify-between py-6">
@@ -47,6 +48,15 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+
+      <div className="flex flex-1 items-center justify-end sm:hidden">
+        <Image
+          src={toggle ? close : menu}
+          alt="menu"
+          className="h-[28px] w-[28px] object-contain"
+          onClick={() => setToggle(!toggle)}
+        />
+      </div>
     </nav>
   );
 };
