@@ -47,6 +47,12 @@ const Hero = () => {
         <h1 className="w-full font-sans text-[52px] font-semibold leading-[75px] text-white ss:text-[68px] ss:leading-[100.8px]">
           Payment Method.
         </h1>
+        {/* paragraph text */}
+        <p className="mt-5 max-w-[470px] font-sans text-[18px] font-normal leading-[30.8px] text-dimWhite">
+          Our team of experts uses a methodology to identify the credit cards
+          most likely to fit your needs. <br />
+          We examine annual percentage rates, annual fees.
+        </p>
       </div>
     </section>
   );
