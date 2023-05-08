@@ -61,7 +61,19 @@ const Navbar = () => {
             toggle ? 'flex' : 'hidden'
           } bg-black-gradient sidebar absolute right-0 top-20 mx-4 my-2 min-w-[140px] rounded-xl p-6`}
         >
-          Show
+          <ul className="flex flex-1 list-none flex-col items-start justify-end">
+            {navLinks.map((nav, index) => (
+              <li
+                key={nav.id}
+                className={`cursor-pointer font-sans text-[16px] font-medium ${
+                  active === nav.title ? 'text-white' : 'text-dimWhite'
+                } ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'}`}
+                onClick={() => setActive(nav.title)}
+              >
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </nav>
