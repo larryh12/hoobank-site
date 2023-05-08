@@ -2,6 +2,7 @@ import React from 'react';
 
 import Image from 'next/image';
 import discount from '@/public/Discount.svg';
+import arrowUp from '@/public/arrow-up.svg';
 import robot from '@/public/robot.png';
 
 const Hero = () => {
@@ -23,8 +24,23 @@ const Hero = () => {
             The Next <br className="hidden sm:block" />{' '}
             <span className="text-gradient">Generation</span>{' '}
           </h1>
-          <div className="mr-0 hidden text-white ss:flex md:mr-4">
-            GetStarted
+          {/* get started button */}
+          <div className="bg-blue-gradient mr-0 hidden h-[140px] w-[140px] cursor-pointer items-center justify-center rounded-full p-[2px] ss:flex md:mr-4">
+            <div className="flex h-[100%] w-[100%] flex-col items-center justify-center rounded-full bg-primary">
+              <div className="flex flex-row items-start justify-center">
+                <p className="font-sans text-[18px] font-medium leading-[23.4px]">
+                  <span className="text-gradient">Get</span>
+                </p>
+                <Image
+                  src={arrowUp}
+                  alt="arrow-up"
+                  className="h-[23px] w-[23px] object-contain"
+                />
+              </div>
+              <p className="font-sans text-[18px] font-medium leading-[23.4px]">
+                <span className="text-gradient">Started</span>
+              </p>
+            </div>
           </div>
         </div>
         {/* heading text lower*/}
