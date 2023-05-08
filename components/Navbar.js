@@ -48,7 +48,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-
+      {/* hamburger menu */}
       <div className="flex flex-1 items-center justify-end sm:hidden">
         <Image
           src={toggle ? close : menu}
@@ -56,6 +56,13 @@ const Navbar = () => {
           className="h-[28px] w-[28px] object-contain"
           onClick={() => setToggle(!toggle)}
         />
+        <div
+          className={`${
+            toggle ? 'flex' : 'hidden'
+          } bg-black-gradient sidebar absolute right-0 top-20 mx-4 my-2 min-w-[140px] rounded-xl p-6`}
+        >
+          Show
+        </div>
       </div>
     </nav>
   );
