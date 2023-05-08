@@ -54,6 +54,14 @@ const Hero = () => {
           We examine annual percentage rates, annual fees.
         </p>
       </div>
+      {/* right section */}
+      <div className="relative my-10 flex flex-1 items-center justify-center md:my-0">
+        <Image
+          src={robot}
+          alt="billing"
+          className="relative z-[5] h-[100%] w-[100%]"
+        />
+      </div>
     </section>
   );
 };
