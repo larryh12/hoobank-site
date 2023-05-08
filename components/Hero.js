@@ -67,6 +67,26 @@ const Hero = () => {
         <div className="blue__gradient absolute bottom-20 right-20 z-[0] h-[50%] w-[50%]" />
         {/* gradient end */}
       </div>
+      {/* get started button */}
+      <div className="flex items-center justify-center ss:hidden">
+        <div className="bg-blue-gradient flex h-[140px] w-[140px] cursor-pointer items-center justify-center rounded-full p-[2px]">
+          <div className="flex h-[100%] w-[100%] flex-col items-center justify-center rounded-full bg-primary">
+            <div className="flex flex-row items-start justify-center">
+              <p className="font-sans text-[18px] font-medium leading-[23.4px]">
+                <span className="text-gradient">Get</span>
+              </p>
+              <Image
+                src={arrowUp}
+                alt="arrow-up"
+                className="h-[23px] w-[23px] object-contain"
+              />
+            </div>
+            <p className="font-sans text-[18px] font-medium leading-[23.4px]">
+              <span className="text-gradient">Started</span>
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
