@@ -17,6 +17,20 @@ const Hero = () => {
             <span className="text-white">1 Month</span> Account
           </p>
         </div>
+        {/* heading text upper*/}
+        <div className="flex w-full flex-row items-center justify-between">
+          <h1 className="flex-1 font-sans text-[52px] font-semibold leading-[75px] text-white ss:text-[72px] ss:leading-[100.8px]">
+            The Next <br className="hidden sm:block" />{' '}
+            <span className="text-gradient">Generation</span>{' '}
+          </h1>
+          <div className="mr-0 hidden text-white ss:flex md:mr-4">
+            GetStarted
+          </div>
+        </div>
+        {/* heading text lower*/}
+        <h1 className="w-full font-sans text-[52px] font-semibold leading-[75px] text-white ss:text-[68px] ss:leading-[100.8px]">
+          Payment Method.
+        </h1>
       </div>
     </section>
   );
