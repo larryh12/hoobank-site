@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Navbar from '@/components/Navbar';
+import { Navbar, Hero } from '@/components';
 
 export default function Home() {
   return (
@@ -11,7 +11,9 @@ export default function Home() {
       </div>
 
       <div className="flex items-start justify-center bg-primary">
-        <div className="w-full xl:max-w-[1280px]">Hero</div>
+        <div className="w-full xl:max-w-[1280px]">
+          <Hero />
+        </div>
       </div>
 
       <div className="flex items-center justify-center bg-primary px-6 sm:px-16">
