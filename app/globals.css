@@ -10,6 +10,9 @@
     #11101d 91.61%
   );
 }
+.bg-discount-gradient {
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
 
 .sidebar {
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
