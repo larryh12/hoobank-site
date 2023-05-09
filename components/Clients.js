@@ -25,7 +25,24 @@ const clients = [
 ];
 
 const Clients = () => {
-  return <div className="text-white">Clients</div>;
+  return (
+    <section className="my-4 flex items-center justify-center">
+      <div className="flex w-full flex-wrap items-center justify-center">
+        {clients.map((client) => (
+          <div
+            key={client.id}
+            className="m-5 flex min-w-[120px] flex-1 items-center justify-center sm:min-w-[192px]"
+          >
+            <Image
+              src={client.logo}
+              alt="client_logo"
+              className="w-[100px] object-contain sm:w-[192px]"
+            />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 };
 
 export default Clients;
