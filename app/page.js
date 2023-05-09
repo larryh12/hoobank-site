@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import Stats from '@/components/Stats';
 import Business from '@/components/Business';
 import Billing from '@/components/Billing';
+import CardDeal from '@/components/CardDeal';
 
 export default function Home() {
   return (
@@ -24,7 +25,8 @@ export default function Home() {
           <Stats />
           <Business />
           <Billing />
-          CardDeal Testimonials Clients CTA Footer
+          <CardDeal />
+          Testimonials Clients CTA Footer
         </div>
       </div>
     </div>
