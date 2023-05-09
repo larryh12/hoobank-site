@@ -71,6 +71,12 @@ const Business = () => {
           Get Started
         </button>
       </div>
+      {/* right section */}
+      <div className="relative ml-0 mt-10 flex flex-1 flex-col items-center justify-center md:ml-10 md:mt-0">
+        {features.map((feature, index) => (
+          <FeatureCard key={feature.id} {...feature} index={index} />
+        ))}
+      </div>
     </section>
   );
 };
