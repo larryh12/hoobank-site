@@ -96,7 +96,65 @@ const socialMedia = [
 ];
 
 const Footer = () => {
-  return <div className="text-white">Footer</div>;
+  return (
+    <section className="flex flex-col items-center justify-center py-6 sm:py-16">
+      <div className="mb-8 flex w-full flex-col items-start justify-center md:flex-row">
+        <div className="mr-10 flex flex-[1] flex-col justify-start">
+          <Image
+            src={logo}
+            alt="hoobank"
+            className="h-[72.14px] w-[266px] object-contain"
+          />
+          <p className="mt-4 max-w-[312px] font-sans text-[18px] font-normal leading-[30.8px] text-dimWhite">
+            A new way to make the payments easy, reliable and secure.
+          </p>
+        </div>
+        <div className="mt-10 flex w-full flex-[1.5] flex-row flex-wrap justify-between md:mt-0">
+          {footerLinks.map((footerlink) => (
+            <div
+              key={footerlink.title}
+              className="my-4 flex min-w-[150px] flex-col ss:my-0"
+            >
+              <h4 className="font-sans text-[18px] font-medium leading-[27px] text-white">
+                {footerlink.title}
+              </h4>
+              <ul className="mt-4 list-none">
+                {footerlink.links.map((link, index) => (
+                  <li
+                    key={link.name}
+                    className={`cursor-pointer font-sans text-[16px] font-normal leading-[24px] text-dimWhite hover:text-secondary ${
+                      index === footerlink.links.length - 1 ? 'mb-0' : 'mb-4'
+                    }`}
+                  >
+                    {link.name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="flex w-full flex-col items-center justify-between border-t-[1px] border-t-[#3F3E45] pt-6 md:flex-row">
+        <p className="text-center font-sans text-[18px] font-normal leading-[27px] text-white">
+          Copyright Ⓒ 2022 HooBank. All Rights Reserved.
+        </p>
+        <div className="mt-6 flex flex-row md:mt-0">
+          {socialMedia.map((social, index) => (
+            <Image
+              key={social.id}
+              src={social.icon}
+              alt={social.id}
+              className={`h-[21px] w-[21px] cursor-pointer object-contain ${
+                index === socialMedia.length - 1 ? 'mr-0' : 'mr-6'
+              }`}
+              // onClick={() => window.open(social.link)}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Footer;
