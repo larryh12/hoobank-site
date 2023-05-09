@@ -3,6 +3,7 @@ import Image from 'next/image';
 import people01 from '@/public/people01.png';
 import people02 from '@/public/people02.png';
 import people03 from '@/public/people03.png';
+import quotes from '@/public/quotes.svg';
 
 const feedback = [
   {
@@ -31,6 +32,35 @@ const feedback = [
   },
 ];
 
+const FeedbackCard = ({ content, name, title, img, index }) => (
+  <div
+    className={`feedback-card my-5 mr-0 flex max-w-[370px] flex-col justify-between rounded-[20px] px-10 py-12 ${
+      index === feedback.length - 1 ? 'sm:mr-0' : 'sm:mr-5 md:mr-10'
+    }`}
+  >
+    <Image
+      src={quotes}
+      alt="double_quotes"
+      className="h-[27.6px] w-[42.6px] object-contain"
+    />
+    <p className="my-10 font-sans text-[18px] font-normal leading-[32.4px] text-white">
+      {content}
+    </p>
+
+    <div className="flex flex-row">
+      <Image src={img} alt={name} className="h-[48px] w-[48px] rounded-full" />
+      <div className="ml-4 flex flex-col">
+        <h4 className="font-sans text-[20px] font-semibold leading-[32px] text-white">
+          {name}
+        </h4>
+        <p className="font-sans text-[16px] font-normal leading-[24px] text-dimWhite">
+          {title}
+        </p>
+      </div>
+    </div>
+  </div>
+);
+
 const Testimonials = () => {
   return (
     <section
@@ -52,8 +82,8 @@ const Testimonials = () => {
       </div>
 
       <div className="feedback-container relative z-[1] flex w-full flex-wrap justify-center sm:justify-start">
-        {feedback.map((card) => (
-          <FeedbackCard key={card.id} {...card} />
+        {feedback.map((card, index) => (
+          <FeedbackCard key={card.id} {...card} index={index} />
         ))}
       </div>
     </section>
