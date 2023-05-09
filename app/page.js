@@ -4,6 +4,7 @@ import Stats from '@/components/Stats';
 import Business from '@/components/Business';
 import Billing from '@/components/Billing';
 import CardDeal from '@/components/CardDeal';
+import Testimonials from '@/components/Testimonials';
 
 export default function Home() {
   return (
@@ -26,7 +27,8 @@ export default function Home() {
           <Business />
           <Billing />
           <CardDeal />
-          Testimonials Clients CTA Footer
+          <Testimonials />
+          Clients CTA Footer
         </div>
       </div>
     </div>
