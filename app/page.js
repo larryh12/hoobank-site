@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Navbar, Hero } from '@/components';
+import { Navbar, Hero, Stats } from '@/components';
 
 export default function Home() {
   return (
@@ -18,7 +18,8 @@ export default function Home() {
 
       <div className="flex items-center justify-center bg-primary px-6 sm:px-16">
         <div className="w-full xl:max-w-[1280px]">
-          Stats Business Billing CardDeal Testimonials Clients CTA Footer
+          <Stats />
+          Business Billing CardDeal Testimonials Clients CTA Footer
         </div>
       </div>
     </div>
