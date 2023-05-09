@@ -25,6 +25,29 @@ const Billing = () => {
       </div>
 
       {/* right section */}
+      <div className="flex flex-1 flex-col items-start justify-center">
+        <h2 className="w-full font-sans text-[40px] font-semibold leading-[66.8px] text-white xs:text-[48px] xs:leading-[76.8px]">
+          Easily control your <br className="hidden sm:block" /> billing &
+          invoicing
+        </h2>
+        <p className="mt-5 max-w-[470px] font-sans text-[18px] font-normal leading-[30.8px] text-dimWhite">
+          Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
+          aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
+          placerat.
+        </p>
+        <div className="mt-6 flex flex-row flex-wrap sm:mt-10">
+          <Image
+            src={apple}
+            alt="app_store"
+            className="mr-5 h-[42.05px] w-[128.86px] cursor-pointer object-contain"
+          />
+          <Image
+            src={google}
+            alt="google_play"
+            className="h-[43.08px] w-[144.17px] cursor-pointer object-contain"
+          />
+        </div>
+      </div>
     </section>
   );
 };
