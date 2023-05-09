@@ -1,4 +1,8 @@
 import React from 'react';
+import Image from 'next/image';
+import people01 from '@/public/people01.png';
+import people02 from '@/public/people02.png';
+import people03 from '@/public/people03.png';
 
 const feedback = [
   {
