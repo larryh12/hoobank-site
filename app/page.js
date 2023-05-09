@@ -1,5 +1,8 @@
-import Image from 'next/image';
-import { Navbar, Hero, Stats, Business } from '@/components';
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import Stats from '@/components/Stats';
+import Business from '@/components/Business';
+import Billing from '@/components/Billing';
 
 export default function Home() {
   return (
@@ -20,7 +23,8 @@ export default function Home() {
         <div className="w-full xl:max-w-[1280px]">
           <Stats />
           <Business />
-          Billing CardDeal Testimonials Clients CTA Footer
+          <Billing />
+          CardDeal Testimonials Clients CTA Footer
         </div>
       </div>
     </div>
