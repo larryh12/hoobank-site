@@ -1,5 +1,34 @@
 import React from 'react';
 
+import Image from 'next/image';
+import star from '@/public/Star.svg';
+import shield from '@/public/Shield.svg';
+import send from '@/public/Send.svg';
+
+const features = [
+  {
+    id: 'feature-1',
+    icon: star,
+    title: 'Rewards',
+    content:
+      'The best credit cards offer some tantalizing combinations of promotions and prizes',
+  },
+  {
+    id: 'feature-2',
+    icon: shield,
+    title: '100% Secured',
+    content:
+      'We take proactive steps make sure your information and transactions are secure.',
+  },
+  {
+    id: 'feature-3',
+    icon: send,
+    title: 'Balance Transfer',
+    content:
+      'A balance transfer credit card can save you a lot of money in interest charges.',
+  },
+];
+
 const Business = () => {
   return (
     <section id="features" className="flex flex-col py-6 sm:py-16 md:flex-row">
