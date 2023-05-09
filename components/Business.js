@@ -29,6 +29,26 @@ const features = [
   },
 ];
 
+const FeatureCard = ({ icon, title, content, index }) => (
+  <div
+    className={`flex flex-row rounded-[20px] p-6 ${
+      index === features.length - 1 ? 'mb-0' : 'mb-6'
+    } feature-card`}
+  >
+    <div className="flex h-[64px] w-[64px] items-center justify-center rounded-full bg-dimBlue">
+      <Image src={icon} alt="icon" className="h-[50%] w-[50%] object-contain" />
+    </div>
+    <div className="ml-3 flex flex-1 flex-col">
+      <h4 className="mb-1 font-sans text-[18px] font-semibold leading-[23.4px] text-white">
+        {title}
+      </h4>
+      <p className="font-sans text-[16px] font-normal leading-[24px] text-dimWhite">
+        {content}
+      </p>
+    </div>
+  </div>
+);
+
 const Business = () => {
   return (
     <section id="features" className="flex flex-col py-6 sm:py-16 md:flex-row">
