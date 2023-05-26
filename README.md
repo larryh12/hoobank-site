@@ -2,13 +2,13 @@
 
 <img src='docs/thumbnail.png'>
 
-A re-creation of a modern front-end UI/UX web design with the theme of a digital payment service, built with:
+A re-creation of a modern front-end web design for a digital payment service website, built with:
 
 - [Next.js](https://nextjs.org/docs)
 - [React](https://reactjs.org/docs/getting-started.html)
 - [Tailwind CSS](https://tailwindcss.com/)
 
-**See it [LIVE](https://hoobank-site-larryh12.vercel.app/)** 👈
+**See it [LIVE](https://hoobank-larryh12.vercel.app/)** 👈
 
 ## Design Breakdown
 
