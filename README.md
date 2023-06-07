@@ -1,20 +1,20 @@
 # HooBank
 
-<img src='docs/thumbnail.png'>
+![og](docs/_og.png)
 
-A re-creation of a modern front-end web design for a digital payment service website, built with:
+---
 
-- [Next.js](https://nextjs.org/docs)
-- [React](https://reactjs.org/docs/getting-started.html)
+## Built with:
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-
-**See it [LIVE](https://hoobank-larryh12.vercel.app/)** 👈
 
 ## Design Breakdown
 
-### Landing Section
+### Hero Section
 
-<img src='docs/landing.png'>
+<img src='docs/hero.png'>
 
 #### Navbar Comp
 
@@ -88,7 +88,7 @@ const [toggle, setToggle] = useState(false);
 - Inside the menu, we use the same `<ul>` code as before, but change only the flex direction to column `flex-col`.
 - The menu has a gradient background with a custom css class `bg-black-gradient` and a slide-up animation class `sidebar`.
 
-#### Hero Section
+#### Hero Content
 
 This section mainly consists of 2 part: left and right. The right section is just simply a graphic image `robot.png` with several gradient divs and custom position styles.
 
@@ -332,10 +332,15 @@ const FeedbackCard = ({ content, name, title, img, index }) => (
 </section>
 ```
 
+<br/>
+
+---
+
 <details>
 <summary>Credits</summary>
 
-[@adrianhajdin GitHub Repo](https://github.com/adrianhajdin/project_hoobank) |
-[One Week Wonders Figma Design](https://www.figma.com/file/bUGIPys15E78w9bs1l4tgS)
+- [JS Mastery YouTube video](https://www.youtube.com/watch?v=_oO4Qi5aVZs)
+- [@adrianhajdin GitHub source](https://github.com/adrianhajdin/project_hoobank)
+- [One Week Wonders Figma design](https://www.figma.com/file/bUGIPys15E78w9bs1l4tgS)
 
 </details>
